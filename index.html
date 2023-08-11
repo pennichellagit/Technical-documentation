@@ -1,0 +1,304 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width= device-width, initial-scale= 1.0" />
+    <title>JavaScript: an introduction</title>
+</head>
+
+<body>
+    <!-- freecodecamp requirement: nav on left side of the page -->
+    <nav id="navbar">
+        <header id="chapters">
+            <h2>Chapters</h2>
+        </header>
+
+        <div class="navbar"><ul>
+            <li><a class="nav-link" href="#intro">Introduction</a></li>
+            <li><a class="nav-link" href="#add">How to add JavaScript to an HTML</a></li>
+            <li><a class="nav-link" href="#func">Some functions</a></li>
+            <li><a class="nav-link" href="#var">Variables</a></li>
+            <li><a class="nav-link" href="#const">Constants</a></li>
+            <li><a class="nav-link" href="#types">Data types</a></li>
+            <li><a class="nav-link" href="#condi">Conditional statements</a></li>
+            <li><a class="nav-link" href="#end">Conclusion</a></li>
+            <li><a class="nav-link" href="#ref">References</a></li>
+        </ul></div>
+    </nav>
+    <!-- nav end -->
+
+    <!-- scrolling page with all the text -->
+
+    <main id="main-doc">
+        <section class="main-section" id="intro">
+            <header>
+                <h1>Introduction</h1>
+            </header>
+            <p> JavaScript is a special language that computers understand. It's used to make websites more interesting
+                and interactive.<br>
+                You know when you click on buttons or see animations on a website? That's often done with
+                JavaScript.<br>
+
+                <br>Imagine you're building a virtual Lego house on a website: JavaScript is like the magical tool you
+                use to make the Lego bricks move, change colors, and even talk to you. <br>
+                It helps you create fun stuff on the screen that responds when you do things like clicking or
+                typing.<br>
+
+                <br> So, in short, JavaScript is the behind-the-scenes wizard that brings websites to life and makes
+                them way more fun to use!
+            </p>
+        </section>
+
+        <section class="main-section" id="add">
+            <header>
+                <h1>How to add JavaScript to an HTML</h1>
+            </header>
+            <p> You add JavaScript to an HTML using the <code> &lt;script&gt; </code> tag.
+
+            <div class="code"><pre> <code>
+                &lt;body&gt;
+                &lt;script&gt;
+
+                console.log(“text”);
+
+                &lt;/script&gt;
+                &lt;/body&gt; </code></pre></div>
+
+            </p>
+        </section>
+
+        <section class="main-section" id="func">
+            <header>
+                <h1>Some functions</h1>
+            </header>
+            <p> The <b>console</b> is part of the web browser and allows you to log messages, run JavaScript code, and
+                see errors and warnings.<br>
+                <code>Console.log</code> is a function which generates output to the console. <br>
+
+                <br> JavaScript treats text and numbers differently:
+                To use text, we have to enclose it in quotes:
+
+                <br>
+            <div class="code"><pre><code> 
+                console.log (“Very nice text”); 
+            </code></pre></div>
+
+            For numbers no quotes are needed:
+
+            <div class="code"><pre><code> 
+                console.log(42); </code></pre></div>
+
+            You can use this function as many times as you want. Each statement outputs text from a new line.<br>
+
+            <br><code> alert(); </code> is another function which displays messages in an alert dialog box:
+
+            <br>
+            <div class="code"><pre><code> 
+                &lt;script&gt
+
+                function showAlert() {
+                alert ("Surprise!");
+                } 
+
+                &lt;/script&gt </code></pre></div>
+
+            A computer program is a list of “instruction” to be “executed” by a computer. In a programming language,
+            these instructions are called <b>statements</b>.
+
+            </p>
+        </section>
+
+        <section class="main-section" id="var">
+            <header>
+                <h1>Variables</h1>
+            </header>
+            <p> In JavaScript, a <b>variable</b> is a named container that stores data.<br>
+                Variables are used to hold values of various types, such as numbers, strings, objects, arrays, and more.
+                <br>They allow you to store and manipulate data in your code, in order to access them throughout the
+                program.<br>
+                You create them with the keyword <i>let</i>:
+            <div class="code"><pre><code> 
+                let example; 
+            </code></pre></div>
+
+            <p><b>Initialization</b> is when you give a variable a value. A value is assigned with =.</p>
+            <div class="code"><pre><code>
+                let name;
+                name="Sara"; </code></pre></div>
+
+            Or, shorter:
+            <div class="code"><pre><code> 
+                let name="Sara"; </code></pre></div>
+
+            After initializing a variable, we can output its value:
+            <div class="code"><pre><code> 
+                let name="Sara";
+                console.log(name);</code></pre></div>
+
+            Variables can change values during the program:
+            <div class="code"><pre><code> 
+                let num=5;
+                num=8;
+                console.log(num); </code></pre></div>
+            When you run this code, it will assign the value 5 to the variable num, then reassign the value 8 to the
+            same variable, and finally, it will log the value of num to the console.
+            As a result, you will see 8 printed in the console output.<br>
+
+            <br>Naming rules for variables:
+            <ul>
+                <li>Must begin with a letter, an underscore _ or a dollar sign $;</li>
+                <li>It can't contain spaces;</li>
+                <li>Can contain only letters, numbers, underscores, dollar signs;</li>
+                <li>They are case-sensitive: <i>Name</i> and <i>name</i> are different.</li>
+            </ul>
+            </p>
+        </section>
+
+        <section class="main-section" id="const">
+            <header>
+                <h1>Constants</h1>
+            </header>
+            <p> <i>const</i> is the keyword for <b>constants</b>, which are variables who do not change.
+                They must have a value when declared and it cannot change.<br>
+                Using <i>const</i> means that the variable will never be assigned to a different value.
+            <div class="code"><pre><code> 
+                const color='red'; </code></pre></div>
+            </p>
+        </section>
+
+        <section class="main-section" id="types">
+            <header>
+                <h1>Data types</h1>
+            </header>
+            <p> As we said, variables and constants hold values of specific <b>data types</b>.<br>
+                Data type refers to the types of values a program can work with.</p>
+
+            <p>A <code> string </code> is a bunch of text or characters. You can create a string by putting text inside
+                single quotes (' '), double quotes (" "), or backticks (` `).
+                <br>Strings help you work with words, sentences, and other text-based stuff in your JavaScript programs.
+            </p>
+
+            <p>Anything inside the quotes is treated as plain text, even if it looks like a number:
+
+            <div class="code"><pre><code> 
+                console.log("42"); </code></pre></div>
+
+            The characters "4" and "2" are treated as two separate symbols within a string, not as a number.</p>
+
+            <p><b>Booleans</b> are a data type that can only have TRUE or FALSE values. In numerical representations, 1
+                means TRUE and 0 is FALSE.</p>
+
+            <p>Comparison operators compare the values and results in Boolean values. Some of them are:
+
+            <ul>
+                <li>== equal to;</li>
+                <li>!= not equal to;</li>
+                <li>> greater than;</li>
+                <li>&lt; smaller than;</li>
+                <li>>= greater or equal to;</li>
+                <li>&lt;= smaller or equal to;</li>
+            </ul>
+
+            <p>=== is a strict equality comparison operator, it returns false for the values which are not a similar
+                type.
+            <div class="code"><pre><code> 
+                let x=5;
+                let y='5';
+                console.log(x==y); // outputs TRUE
+                console.log(x===y); // outputs FALSE, cause they are not the same data type </code></pre></div>
+            </p>
+
+            <p>>&lt; are also used to compare the string lexicographically, where the alphabetical order of words is
+                based on the alphabetical order of their component letters.
+            <div class="code"><pre><code> 
+                console.log('a' &lt; 'b'); // outputs TRUE
+                console.log(“Bob” > “Dave”); // outputs FALSE </pre></code></div>
+            </p>
+        </section>
+
+        <section class="main-section" id="condi">
+            <header>
+                <h1>Conditional statements</h1>
+            </header>
+            <p> <b>'if'</b>, <b>'else if'</b> and <b>'else'</b> are conditional statements.</p>
+
+            <p>The <b>if</b> statement is used to run code in case the condition evaluates to TRUE.</p>
+            <div class="code"><pre><code> 
+                let purchase= 1700;
+                if (purchase>=1500); {
+                    console.log(“Discount!”); } </pre></code></div>
+
+            <p>The condition is TRUE, so the code in the if statement will be executed.<br>
+            If the condition is FALSE, then it won't be executed.<br>
+            The condition is written in (), followed by {} where the code is written.</p>
+
+            <p>You can use any expression that can be evaluated as TRUE or FALSE for your if statement and they can be
+                nested inside one other: the second if statement will only be performed if the condition of the first
+                one is TRUE.</p>
+
+            <p>The <b>else</b> statement is used to run code in case the condition evaluates to FALSE.<br>
+                It doesn't have its own condition, it just checks the condition of the if statement and runs the code if
+                it is FALSE.</p>
+
+            <div class="code"><pre><code> 
+                let number= -5;
+                if(number >= 0) {
+                    console.log(“Positive number”); }
+                else {
+                    console.log(“Negative number”); }</pre></code></div>
+
+            <p><b> else if </b> is used to test multiple conditions and it's written between the if and else statements.
+                You can use it many times.
+            <div class="code"><pre><code> 
+                let time= 15; 
+                if(time &lt; 10) {
+                    console.log (“Good morning”); }
+                else if(time &lt; 20) {
+                    console.log(“Good day”); }
+                else {
+                    console.log(“Good evening”); } </pre></code></div>
+
+            The program will move to the else if statements when the condition of the if statement is FALSE. If its
+            condition is also FALSE, then the program will move to the else block.</p>
+            </p>
+        </section>
+
+        <section class="main-section" id="end">
+            <header>
+                <h2>Conclusion</h2>
+            </header>
+            <p> JavaScript is an incredible tool which gives us the possibility of transforming websites into
+                interactive,
+                engaging experiences.</p>
+            <p>With this, we've explored just introductory concepts.<br>
+                As you continue to learn, you will get to know so much more.<br>
+
+                While you do, don't be afraid to experiment, make mistakes, and learn from them. Practice is key, and
+                this is just the beginning.</p>
+
+            Don't be afraid to have fun! Happy coding!
+            </p>
+        </section>
+
+        <section class="main-section" id="ref">
+            <header>
+                <h2>References</h2>
+            </header>
+            <ul>
+                <li>All text from this page comes from my notes while following the <a
+                        href="https://www.sololearn.com/learn/courses/javascript-introduction"
+                        target="_blank">Introduction to JavaScript</a>
+                    SoloLearn's course. </li>
+            </ul>
+        </section>
+
+
+
+    </main>
+    <!-- end scrolling page -->
+
+</body>
+
+</html>

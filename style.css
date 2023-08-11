@@ -1,0 +1,74 @@
+/** freecodecamp requirement! **/
+
+@media (hover:hover){
+    a:hover {
+        color: #03392D;
+        transition-duration: 2s;
+    }
+}
+
+/** end requirement **/
+
+html {
+    font-family:'Times New Roman', Georgia, monospace;
+    background-color: #FAF1E6;
+    color: #064420;
+    font-size: medium;
+}
+
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: double;
+    border-color: rgba(10, 46, 13, 0.4); 
+    z-index: 1;
+    background-color: #FAF1E6;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+    z-index:0;
+}
+
+a {
+    color:#287749;
+}
+
+#chapters {
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 50%;
+}
+
+div.code {
+    background: #FAF1E6;
+    background: linear-gradient(90deg, rgba(198,198,198,0.5411414565826331) 0%, rgba(211,211,211,0.4290966386554622) 76%, rgba(226,226,226,0) 100%);
+    color: black;
+    width: 50%;
+}
+
+.navbar {
+    line-height: 2;
+    font-size: large;
+    font-family: Georgia;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
